@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* 全体にborder-box(heightとwidthにpaddingとmarginを含む)指定をする。 */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;    /* 文字サイズを正しく反映 */
+}
+
+body {
+    /* GoogleFonts */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    color: rgb(223, 122, 67);
+    background: url(../img/matagunayo.jpg) no-repeat top / cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+.vote-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#vote-button-inoki,
+#vote-button-tyosyu,
+#vote-button-misawa,
+#vote-button-hashimoto {
+    width: 200px;
+    border: 2px solid ;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #fff;
+    opacity: .9;
+}
+
+#vote-button-inoki:hover,
+#vote-button-tyosyu:hover,
+#vote-button-misawa:hover,
+#vote-button-hashimoto:hover {
+    background-color: rgb(114, 230, 114);
+    cursor: pointer;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts指定はreset.cssよりも前に指定しないと適用されない -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>投票アプリ</title>
+</head>
+<body>
+    <div class="bgimg">
+    <header>
+        <h1>投票画面</h1>
+        <h1>歴代最強のプロレスラーは誰ですか？</h1>
+    </header>
+    <main>
+        <div class="vote-container">
+            <div id="vote-button-inoki">
+                <p class="inokiname">猪木</p>
+                <p class="inokicount">0</p>
+            </div>
+            <div id="vote-button-tyosyu">
+                <p class="tyosyuname">長州</p>
+                <p class="tyosyucount">0</p>
+            </div>
+            <div id="vote-button-misawa">
+                <p class="misawaname">三沢</p>
+                <p class="misawacount">0</p>
+            </div>
+            <div id="vote-button-hashimoto">
+                <p class="hashimotoname">橋本</p>
+                <p class="hashimotocount">0</p>
+            </div>
+        </div>
+    </main>
+    </div>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--** 以下Firebase **-->
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
